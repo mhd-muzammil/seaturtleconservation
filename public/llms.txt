@@ -1,0 +1,17 @@
+# Sea Turtle Conservation Project
+
+## About
+This is the official website for Sea Turtle Conservation, dedicated to protecting sea turtles and their habitats through education, rescue operations, and community engagement.
+
+## Content Overview
+- /about: Mission, Vision, and Team information.
+- /services: Our conservation programs and educational workshops.
+- /gallery: Video and image gallery of our work.
+- /donation: Support our cause with tiered donations.
+- /contact: Get in touch or volunteer.
+- /blog: Educational articles on turtle ecology and protection.
+
+## Technical Details
+- Built with Next.js 14 and Tailwind CSS.
+- Uses Framer Motion for animations.
+- Responsive design for all devices.

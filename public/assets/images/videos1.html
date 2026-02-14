@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="sea turtle conservation,sea turtle conservation trust in chengalpattu,near me,sea turtle onservation in india,tamilnadu, best sea turtle conservation trust in tamilnadu,how to volunteer for sea turtle conservation trust ,best practices for protecting sea turtle nests on beaches,
+    impact of plastic pollution on sea turtle populations,tips for eco friendly travel and sea turtle conseration ,protecting sea turtle habitats  from coastal development,
+    conservation efforts to save leaterack sea turtles,adapt  a sea turtle program for conservation,latest researches on sea turtle migration,
+    how climate changes affects sea turtle nesting,communuty led initiatives  for sea turtle conservation,sea turtle rescue and rehabilitation , ">
+   
+    <meta name="description" content="">
+
+
+
+    <meta name="author" content="Davidraj s">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>sea turtle conservation</title>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <div id="video_player">
+            <video controls class="video" id="video">
+                
+
+            <source src="videoplayback.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" type="youtube video player">
+                <source src="videoplayback.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" type="youtube video player">
+            </video>
+        </div>
+        <div class="scrollBox">
+            <div class="box">
+                <img src="\turtle\assets\images\hi.jpg">
+
+                <div class="box-content">
+                    <h3> Marathon for to save sea turtles in chennai </h3>
+                    <a href ="videoplayback (1).mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="btn">Watch</a>
+                </div>
+            </div>
+
+            <div class="box">
+               <img src="\turtle\assets\images\new.jpg">
+
+                <div class="box-content">
+                    <h3>Olive Ridley in chennai </h3>
+                    <a href="videoplayback (2).mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="btn">Watch</a>
+                </div>
+            </div>
+            <div class="box">
+               <img src="\turtle\assets\images\hello.jpg">
+
+                <div class="box-content">
+                    <h3>Rescue the sea turtles</h3>
+                    <a href="videoplayback.mp4" class="btn">Watch</a>
+                </div>
+            </div>
+            
+
+            
+            </div>
+
+           
+            </div>
+        </div>
+    
+
+
+
+    <!-- ###########################javascript for vidoe Player################ -->
+
+    <script type="text/javascript">
+        let anchors = document.querySelectorAll('div .btn');
+    let links = [...anchors];
+    
+    for (let i=0; i<links.length; i++) {
+        links[i].onclick = handler;
+    }
+    function handler(e) {
+        e.preventDefault();
+        let videotarget = this.getAttribute("href");
+        let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
+        let video = document.getElementById("video");
+        video.removeAttribute("poster");
+        let source = document.querySelectorAll("#video_player video source");
+        source[0].src = filename + ".mp4";
+        source[1].src = filename + ".m4v";
+        video.load();
+        video.play();
+    }
+    </script>
+</body>
+</html>

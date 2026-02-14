@@ -1,26 +1,40 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #fff; /* Default text color on dark bg? Let's check original. Original p color is mostly overridden or default. */
+  background: #232323;
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}
+
+@layer components {
+  .filled-button {
+    @apply bg-primary text-white text-[13px] uppercase font-bold px-[30px] py-[12px] rounded-[30px] inline-block transition-all duration-300 hover:bg-white hover:text-primary;
+  }
+  
+  .border-button {
+    @apply bg-transparent text-white border-2 border-white text-[13px] uppercase font-bold px-[28px] py-[10px] rounded-[30px] inline-block transition-all duration-300 hover:bg-white hover:text-primary;
+  }
+
+  .section-heading {
+    @apply text-center mb-[80px];
+  }
+
+  .section-heading h2 {
+    @apply text-[36px] font-semibold text-white;
+  }
+
+  .section-heading em {
+    @apply not-italic text-primary;
+  }
+
+  .section-heading span {
+    @apply block mt-[15px] uppercase text-[15px] text-[#666] tracking-[1px];
+  }
 }
