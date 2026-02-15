@@ -7,10 +7,8 @@ import { FaPhoneAlt, FaArrowRight } from 'react-icons/fa';
 export default function RequestForm() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden flex items-center justify-center">
-      {/* Parallax Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/assets/images/turtle-underwater.webp')" }}
+        className="absolute inset-0 z-0 bg-fixed bg-center bg-cover bg-[url('/assets/images/turtle-underwater.webp')]"
       ></div>
       
       {/* Gradient Overlay */}

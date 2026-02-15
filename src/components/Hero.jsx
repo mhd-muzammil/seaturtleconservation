@@ -109,16 +109,16 @@ export default function Hero() {
                 <AnimatePresence mode="wait">
                   {currentSlide === index && (
                     <>
-                      <motion.h6 
+                      <motion.div 
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                         className="text-primary text-lg md:text-xl font-bold uppercase tracking-widest mb-4"
                       >
                         {slide.h6}
-                      </motion.h6>
+                      </motion.div>
 
-                      <motion.h4 
+                      <motion.h1 
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}

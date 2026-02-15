@@ -43,9 +43,20 @@ export default function Footer() {
               <p>Chengalpattu - 603 003<br />Tamil Nadu, India</p>
             </div>
             <ul className="flex space-x-3 mt-6">
-              {[FaFacebookF, FaTwitter, FaLinkedinIn, FaBehance].map((Icon, index) => (
+              {[
+                { Icon: FaFacebookF, href: "https://www.facebook.com/groups/729945823774911/?ref=share", label: "Facebook" },
+                { Icon: FaTwitter, href: "https://twitter.com/seaturtletrust", label: "Twitter" },
+                { Icon: FaLinkedinIn, href: "https://linkedin.com/company/seaturtleconservation", label: "LinkedIn" },
+                { Icon: FaBehance, href: "#", label: "Behance" }
+              ].map(({ Icon, href, label }, index) => (
                 <li key={index}>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-white/10 text-white rounded-full transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110">
+                  <a 
+                    href={href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="w-10 h-10 flex items-center justify-center bg-white/10 text-white rounded-full transition-all duration-300 hover:bg-primary hover:text-white hover:scale-110"
+                  >
                     <Icon />
                   </a>
                 </li>
@@ -78,11 +89,22 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="space-y-6">
             <h4 className="text-xl font-bold text-white tracking-wide mb-4">Follow Us</h4>
              <ul className="space-y-3 text-sm">
-              {["Facebook", "Twitter", "Instagram", "LinkedIn", "Behance"].map((social) => (
-                <li key={social}>
-                  <a href="#" className="hover:text-primary transition-colors duration-300 flex items-center group">
+              {[
+                { name: "Facebook", href: "https://www.facebook.com/groups/729945823774911/?ref=share" },
+                { name: "Twitter", href: "https://twitter.com/seaturtletrust" },
+                { name: "Instagram", href: "https://instagram.com/seaturtleconservation" },
+                { name: "LinkedIn", href: "https://linkedin.com/company/seaturtleconservation" },
+                { name: "Behance", href: "#" }
+              ].map((social) => (
+                <li key={social.name}>
+                  <a 
+                    href={social.href}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-primary transition-colors duration-300 flex items-center group"
+                  >
                     <span className="w-0 group-hover:w-2 h-[1px] bg-primary mr-0 group-hover:mr-2 transition-all duration-300"></span>
-                    {social}
+                    {social.name}
                   </a>
                 </li>
               ))}

@@ -9,15 +9,15 @@ const CallbackForm = dynamic(() => import("@/components/CallbackForm"));
 const Partners = dynamic(() => import("@/components/Partners"));
 
 export const metadata = {
-  title: "Sea Turtle Conservation Trust - Home",
-  description: "Join us in our mission to protect and preserve sea turtles and their habitats.",
+  title: "Sea Turtle Conservation Trust India | Protect Sea Turtles & Marine Life",
+  description: "Join Sea Turtle Conservation Trust India in protecting endangered sea turtles and preserving marine ecosystems. Support conservation programs, awareness campaigns, and sustainable ocean initiatives.",
   alternates: {
-    canonical: "https://seaturtleconservation.com",
+    canonical: "https://www.seaturtleconservation.in",
   },
   openGraph: {
-    title: "Sea Turtle Conservation Trust",
+    title: "Sea Turtle Conservation Trust India",
     description: "Protecting sea turtles and marine ecosystems.",
-    url: "https://seaturtleconservation.com",
+    url: "https://www.seaturtleconservation.in",
     siteName: "Sea Turtle Conservation Trust",
     images: [
       {
@@ -34,17 +34,21 @@ export const metadata = {
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NGO",
     "name": "Sea Turtle Conservation Trust",
-    "url": "https://seaturtleconservation.com",
-    "logo": "https://seaturtleconservation.com/assets/images/logo.png", // Assuming logo exists or using hero image
+    "url": "https://www.seaturtleconservation.in",
+    "logo": "https://www.seaturtleconservation.in/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-9444958197",
       "contactType": "customer service"
     },
     "sameAs": [
-      "https://www.facebook.com/groups/729945823774911/?ref=share"
+      "https://www.facebook.com/groups/729945823774911/?ref=share",
+      "https://instagram.com/seaturtleconservation",
+      "https://linkedin.com/company/seaturtleconservation",
+      "https://twitter.com/seaturtletrust",
+      "https://youtube.com/seaturtleconservation"
     ]
   };
 
