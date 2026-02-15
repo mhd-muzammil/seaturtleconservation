@@ -3,6 +3,7 @@ import "./globals.css";
 import SubHeader from "@/components/SubHeader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <SubHeader />
         <Navbar />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
