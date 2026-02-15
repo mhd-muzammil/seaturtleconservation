@@ -66,19 +66,6 @@ export default function Partners() {
         </div>
       </div>
 
-       <style jsx>{`
-        @keyframes infinite-scroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-100%); }
-        }
-        .animate-infinite-scroll {
-          animation: infinite-scroll 40s linear infinite;
-        }
-        /* Pause on hover container */
-        .w-full:hover .animate-infinite-scroll {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 }

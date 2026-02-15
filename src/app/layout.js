@@ -39,7 +39,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans antialiased text-white bg-dark`}>
+      <body className={`${poppins.variable} font-sans antialiased text-white bg-dark`} suppressHydrationWarning>
         <SubHeader />
         <Navbar />
         {children}

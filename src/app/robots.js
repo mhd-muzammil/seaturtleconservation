@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://seaturtleconservation.com/sitemap.xml',
+    sitemap: 'https://www.seaturtleconservation.in/sitemap.xml',
   }
 }

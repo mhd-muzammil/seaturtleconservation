@@ -38,3 +38,28 @@ body {
     @apply block mt-[15px] uppercase text-[15px] text-[#666] tracking-[1px];
   }
 }
+
+.slick-active .dot-item {
+  background-color: #fca311 !important; /* using primary color */
+  transform: scale(1.25);
+}
+
+.custom-dots-testimonials li button:before {
+  color: white !important;
+  opacity: 0.25 !important;
+  font-size: 12px !important;
+}
+
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}

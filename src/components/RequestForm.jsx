@@ -1,15 +1,23 @@
 "use client";
 import React from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaArrowRight } from 'react-icons/fa';
 
 export default function RequestForm() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden flex items-center justify-center">
-      <div 
-        className="absolute inset-0 z-0 bg-fixed bg-center bg-cover bg-[url('/assets/images/turtle-underwater.webp')]"
-      ></div>
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/assets/images/turtle-underwater.webp"
+          alt="Sea Turtle Underwater"
+          fill
+          className="object-cover object-center"
+          quality={80}
+          sizes="100vw"
+        />
+      </div>
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-black/50 to-blue-900/80 z-10 backdrop-blur-[2px]"></div>

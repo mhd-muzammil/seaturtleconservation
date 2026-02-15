@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Custom Arrows
@@ -89,17 +90,26 @@ export default function Hero() {
        <Slider {...settings} className="h-full">
         {slides.map((slide, index) => (
           <div key={slide.id} className="relative h-screen outline-none">
-            {/* Background Image with Ken Burns Effect */}
+            {/* Background Image with Next/Image and Ken Burns Effect */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div 
                   key={`bg-${index}-${currentSlide === index}`} // Force remount on active
                   initial={{ scale: 1 }}
                   animate={{ scale: currentSlide === index ? 1.1 : 1 }}
                   transition={{ duration: 6, ease: "linear" }}
-                  className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: `url('${slide.image}')` }}
-                />
-                <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-black/20 to-black/40"></div>
+                  className="relative w-full h-full"
+                >
+                  <Image
+                    src={slide.image}
+                    alt={slide.h4.replace(/<[^>]+>/g, '')} // Strip HTML tags for alt text
+                    fill
+                    priority={index === 0} // Priority for the first image (LCP)
+                    quality={90}
+                    className="object-cover"
+                    sizes="100vw"
+                  />
+                </motion.div>
+                <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-black/20 to-black/40 z-10"></div>
             </div>
 
             {/* Content centered */}
@@ -156,12 +166,6 @@ export default function Hero() {
           </div>
         ))}
        </Slider>
-       <style jsx global>{`
-         .slick-active .dot-item {
-           background-color: #fca311 !important; /* using primary color */
-           transform: scale(1.25);
-         }
-       `}</style>
     </div>
   );
 }

@@ -85,18 +85,6 @@ export default function Testimonials() {
           </Slider>
         </div>
       </div>
-      
-      <style jsx global>{`
-        .custom-dots-testimonials li button:before {
-            color: white;
-            opacity: 0.25;
-            font-size: 12px;
-        }
-        .custom-dots-testimonials li.slick-active button:before {
-            color: #fca311;
-            opacity: 1;
-        }
-      `}</style>
     </section>
   );
 }

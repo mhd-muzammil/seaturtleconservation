@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
-import RequestForm from "@/components/RequestForm";
-import Services from "@/components/Services";
-import MoreInfo from "@/components/MoreInfo";
 
+const RequestForm = dynamic(() => import("@/components/RequestForm"));
+const Services = dynamic(() => import("@/components/Services"));
+const MoreInfo = dynamic(() => import("@/components/MoreInfo"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
 const CallbackForm = dynamic(() => import("@/components/CallbackForm"));
 const Partners = dynamic(() => import("@/components/Partners"));
