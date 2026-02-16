@@ -60,7 +60,7 @@ export default function Hero() {
       image: "/assets/images/slide_01 (3).jpg",
       h6: "Discover the Magnificent World of Sea Turtles",
       h4: "Unveiling the Human Life Benefits of Sea Turtles & Ecosystem Health",
-      p: "Welcome to Sea Turtle Conservation Trust - A Sanctuary for Sea Turtles and Marine Ecosystem",
+      p: "Welcome to Sea Turtle Conservation - A Sanctuary for Sea Turtles and Marine Ecosystem",
       link: "/blog/benefits", 
       linkText: "Read more",
       extraLink: { text: "One-page version", href: "/one-page" }

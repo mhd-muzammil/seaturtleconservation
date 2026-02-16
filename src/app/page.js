@@ -9,16 +9,16 @@ const CallbackForm = dynamic(() => import("@/components/CallbackForm"));
 const Partners = dynamic(() => import("@/components/Partners"));
 
 export const metadata = {
-  title: "Sea Turtle Conservation Trust India | Protect Sea Turtles & Marine Life",
-  description: "Join Sea Turtle Conservation Trust India in protecting endangered sea turtles and preserving marine ecosystems. Support conservation programs, awareness campaigns, and sustainable ocean initiatives.",
+  title: "Sea Turtle Conservation India | Protect Sea Turtles & Marine Life",
+  description: "Join Sea Turtle Conservation India in protecting endangered sea turtles and preserving marine ecosystems. Support conservation programs, awareness campaigns, and sustainable ocean initiatives.",
   alternates: {
     canonical: "https://www.seaturtleconservation.in",
   },
   openGraph: {
-    title: "Sea Turtle Conservation Trust India",
+    title: "Sea Turtle Conservation India",
     description: "Protecting sea turtles and marine ecosystems.",
     url: "https://www.seaturtleconservation.in",
-    siteName: "Sea Turtle Conservation Trust",
+    siteName: "Sea Turtle Conservation",
     images: [
       {
         url: "/assets/images/slide_01 (3).jpg",
@@ -35,7 +35,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NGO",
-    "name": "Sea Turtle Conservation Trust",
+    "name": "Sea Turtle Conservation",
     "url": "https://www.seaturtleconservation.in",
     "logo": "https://www.seaturtleconservation.in/logo.png",
     "contactPoint": {

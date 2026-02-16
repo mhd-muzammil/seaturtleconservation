@@ -37,7 +37,7 @@ export default function Footer() {
           
           {/* Column 1: Info */}
           <motion.div variants={itemVariants} className="space-y-6">
-            <h4 className="text-2xl font-bold text-white tracking-wide uppercase border-b-2 border-primary inline-block pb-2 mb-4">Sea Turtle Trust</h4>
+            <h4 className="text-2xl font-bold text-white tracking-wide uppercase border-b-2 border-primary inline-block pb-2 mb-4">Sea Turtle Conservation</h4>
             <div className="space-y-4 text-sm font-light leading-relaxed">
               <p>No.81/5, 6th Street,<br />Shanthi Nagar, Nemeli,</p>
               <p>Chengalpattu - 603 003<br />Tamil Nadu, India</p>
@@ -150,7 +150,7 @@ export default function Footer() {
       <div className="border-t border-white/10 mt-16 pt-8">
         <div className="container mx-auto px-4 text-center">
             <p className="text-xs text-gray-500 font-light tracking-widest uppercase">
-            Copyright &copy; 2023 Sea Turtle Conservation Trust. All Rights Reserved.
+            Copyright &copy; 2023 Sea Turtle Conservation. All Rights Reserved.
             </p>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function ServicesPage() {
             We strongly believe in the power of education to drive positive change. Through community outreach programs, school visits, and interactive workshops, we raise awareness about the importance of sea turtle conservation. By engaging with the public, we inspire a sense of responsibility and foster a deeper appreciation for these remarkable creatures and their habitats.
           </p>
           <p className="leading-relaxed text-gray-600">
-            At Sea turtle conservation trust, we recognize that public awareness and education are key to fostering a culture of conservation. Through our dedicated efforts, we strive to empower individuals, communities, and decision-makers to become advocates for sea turtle conservation, working together to safeguard these remarkable creatures for generations to come.
+            At Sea Turtle Conservation, we recognize that public awareness and education are key to fostering a culture of conservation. Through our dedicated efforts, we strive to empower individuals, communities, and decision-makers to become advocates for sea turtle conservation, working together to safeguard these remarkable creatures for generations to come.
           </p>
         </>
       )

@@ -45,7 +45,7 @@ export default function MoreInfo() {
                 
                 <div className="space-y-6 text-gray-600 font-light leading-relaxed text-lg">
                     <p>
-                    Davidraj is the founder of the Sea Turtle Conservation Trust in Chennai, India. He has dedicated his life to protecting sea turtles and their habitats along the Entire World coastline. He has worked tirelessly to raise awareness about the threats facing sea turtles, such as habitat loss, pollution, and poaching, and has implemented various conservation programs to protect their nesting and hatching grounds.
+                    Davidraj is the founder of the Sea Turtle Conservation in Chennai, India. He has dedicated his life to protecting sea turtles and their habitats along the Entire World coastline. He has worked tirelessly to raise awareness about the threats facing sea turtles, such as habitat loss, pollution, and poaching, and has implemented various conservation programs to protect their nesting and hatching grounds.
                     </p>
                     <p className="border-l-4 border-primary pl-4 italic text-gray-700 font-normal">
                     Through his efforts, He has helped to save countless nests and hatchlings, ensuring that these magnificent creatures continue to thrive in the wild.

@@ -15,15 +15,15 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Sea Turtle Conservation Trust | Protecting Marine Life",
-  description: "Join the Sea Turtle Conservation Trust. We protect endangered sea turtles, restore habitats, and educate communities across India. Volunteer today!",
+  title: "Sea Turtle Conservation | Protecting Marine Life",
+  description: "Join the Sea Turtle Conservation. We protect endangered sea turtles, restore habitats, and educate communities across India. Volunteer today!",
   metadataBase: new URL('https://www.seaturtleconservation.in'),
-  keywords: ["Sea turtles", "Marine conservation", "Ocean protection", "Sea Turtle Conservation Trust", "India", "Volunteer", "Marine Wildlife", "Endangered Species"],
+  keywords: ["Sea turtles", "Marine conservation", "Ocean protection", "Sea Turtle Conservation", "India", "Volunteer", "Marine Wildlife", "Endangered Species"],
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://www.seaturtleconservation.in',
-    siteName: 'Sea Turtle Conservation Trust',
+    siteName: 'Sea Turtle Conservation',
   },
   twitter: {
     card: 'summary_large_image',
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "NGO",
-        "name": "Sea Turtle Conservation Trust",
+        "name": "Sea Turtle Conservation",
         "url": "https://www.seaturtleconservation.in",
         "logo": "https://www.seaturtleconservation.in/assets/images/logo.png",
         "sameAs": [
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "LocalBusiness",
-        "name": "Sea Turtle Conservation Trust",
+        "name": "Sea Turtle Conservation",
         "image": "https://www.seaturtleconservation.in/assets/images/logo.png",
         "@id": "https://www.seaturtleconservation.in",
         "url": "https://www.seaturtleconservation.in",

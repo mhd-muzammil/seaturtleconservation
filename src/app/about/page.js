@@ -142,10 +142,10 @@ export default function AboutPage() {
                     </h2>
                     <div className="text-gray-600 leading-relaxed text-[16px] space-y-6 font-light">
                         <p>
-                            At the Sea Turtle Conservation Trust, our mission is to protect and conserve sea turtles and their habitats for the benefit of present and future generations. We are dedicated to ensuring the survival of these incredible creatures through research, education, and community engagement.
+                            At the Sea Turtle Conservation, our mission is to protect and conserve sea turtles and their habitats for the benefit of present and future generations. We are dedicated to ensuring the survival of these incredible creatures through research, education, and community engagement.
                         </p>
                         <p>
-                            The Sea Turtle Conservation Trust is a non-profit organization committed to the conservation of sea turtles worldwide. With a team of passionate experts and volunteers, we work tirelessly to safeguard these magnificent creatures and the fragile ecosystems they inhabit.
+                            The Sea Turtle Conservation is a non-profit organization committed to the conservation of sea turtles worldwide. With a team of passionate experts and volunteers, we work tirelessly to safeguard these magnificent creatures and the fragile ecosystems they inhabit.
                         </p>
                     </div>
                 </SpotlightCard>

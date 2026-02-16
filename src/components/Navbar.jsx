@@ -36,6 +36,16 @@ export default function Navbar() {
         { name: "Thriving Ecology", href: "/blog/ecology" },
       ] 
     },
+    { 
+      name: "Explore", 
+      href: "#", 
+      subLinks: [
+        { name: "🌍 Global Impact", href: "/tracker" },
+        { name: "🌊 Hatchling's Journey", href: "/journey" },
+        { name: "❤️ Adoption Center", href: "/adoption" },
+        { name: "🧬 Anatomy Explorer", href: "/anatomy" },
+      ] 
+    },
     { name: "Our Services", href: "/services", subLinks: [{ name: "Gallery", href: "/gallery" }] },
     { name: "Donation", href: "/donation" },
     { name: "Contact Us", href: "/contact" },
@@ -52,12 +62,13 @@ export default function Navbar() {
     }
   };
 
-  const isHeroPage = ["/", "/about", "/services", "/contact", "/one-page", "/gallery"].includes(pathname);
+  const isHeroPage = ["/", "/about", "/services", "/contact", "/one-page", "/gallery", "/journey", "/tracker"].includes(pathname);
   const showSolidNav = isSticky || !isHeroPage;
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
+    <>
+      <motion.header
+        initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -69,19 +80,19 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between relative">
           {/* Logo */}
-          <Link href="/" className="outline-none z-50 relative">
+          <Link href="/" className="outline-none z-50 relative flex items-center h-full">
             <motion.h2 
               layout
-              className={`uppercase text-2xl md:text-3xl font-bold tracking-tight ${
+              className={`uppercase text-lg md:text-xl lg:text-xl xl:text-2xl font-bold tracking-tight leading-none ${
                 showSolidNav ? "text-primary" : "text-white"
               }`}
             >
-              Sea Turtle <span className={showSolidNav ? "text-dark" : "text-white/80"}>Trust</span>
+              Sea Turtle Conservation
             </motion.h2>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 <Link
@@ -209,5 +220,7 @@ export default function Navbar() {
         </nav>
       </div>
     </motion.header>
+    {!isHeroPage && <div className="h-20 lg:h-24" />}
+    </>
   );
 }
